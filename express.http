@@ -1,0 +1,33 @@
+### [X] GET
+GET http://localhost:3000/items
+
+### [X] GET ID
+GET http://localhost:3000/items/1
+
+### [X] POST
+POST  http://localhost:3000/items/
+Content-Type: application/json
+
+{
+  "content": "Item 2"
+}
+
+### [X] PUT
+PUT http://localhost:3000/items/1
+Content-Type: application/json
+
+{
+  "content": "Item 1 updated"
+}
+
+### [X] PATCH
+PATCH http://localhost:3000/items/1
+Content-Type: application/json
+
+{
+  "content": "Item 2 updated again"
+}
+
+### [X] DELETE
+DELETE http://localhost:3000/items/1
+
