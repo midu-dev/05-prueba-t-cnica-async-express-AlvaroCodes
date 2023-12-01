@@ -23,11 +23,14 @@ app.get('/items/:id', ({ params }, res) => {
 // Crear
 app.post('/items', (req, res) => {
   const { content } = req.body
-  items.push({
+
+  const item = {
     id: items.length + 1,
     content
-  })
-  return res.json(content)
+  }
+
+  items.push(item)
+  return res.json(item)
 })
 
 // Modificar
